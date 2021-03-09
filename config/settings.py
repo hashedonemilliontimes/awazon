@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     "default": env.dj_db_url("DATABASE_URL",
-    default="postgres://postgres@db/postgres") 
+    default="postgres://postgres@db/postgres")
 }
 
 
@@ -153,3 +153,5 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+DEFAULT_FROM_EMAIL = 'admin@awazon.com'
